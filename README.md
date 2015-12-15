@@ -1,5 +1,7 @@
 # ActiveRecord::PostgreAnalyzer
 
+[![Gem Version](https://badge.fury.io/rb/active_record-postgre_analyzer.svg)](https://badge.fury.io/rb/active_record-postgre_analyzer)
+
 Analyze the execution plan and write log if sequential scan is detected.
 
 ## Installation

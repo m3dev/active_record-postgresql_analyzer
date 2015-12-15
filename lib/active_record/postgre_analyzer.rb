@@ -16,6 +16,7 @@ module ActiveRecord
         return if ignore_payload?(payload)
 
         # disable SeqScan when index exists
+        #   SEE ALSO: http://www.postgresql.org/docs/9.4/static/indexes-examine.html
         ActiveRecord::Base.connection.execute("SET enable_seqscan TO off", "SCHEMA")
 
         explain_result = ActiveRecord::Base.connection.explain(payload[:sql], payload[:binds])

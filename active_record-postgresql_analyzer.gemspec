@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'active_record/postgre_analyzer/version'
+require 'active_record/postgresql_analyzer/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "active_record-postgre_analyzer"
-  spec.version       = ActiveRecord::PostgreAnalyzer::VERSION
+  spec.name          = "active_record-postgresql_analyzer"
+  spec.version       = ActiveRecord::PostgreSQLAnalyzer::VERSION
   spec.authors       = ["Takayuki Matsubara"]
   spec.email         = ["takayuki.1229@gmail.com"]
 
   spec.summary       = %q{Analyze the execution plan and write log if sequential scan is detected}
   spec.description   = %q{Analyze the execution plan and write log if sequential scan is detected}
-  spec.homepage      = "https://github.com/m3dev/active_record-postgre_analyzer"
+  spec.homepage      = "https://github.com/m3dev/active_record-postgresql_analyzer"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }

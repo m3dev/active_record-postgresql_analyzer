@@ -1,12 +1,12 @@
-require 'active_record/postgre_analyzer'
+require 'active_record/postgresql_analyzer'
 
 ActiveRecord::Base.establish_connection(
   adapter: 'postgresql',
   host: ENV['DB_HOST'] || 'localhost',
   port: ENV['DB_PORT'] || 5432,
-  database: ENV['DB_NAME'] || 'postgre_analyzer',
-  username: ENV['DB_USER'] || 'postgre_analyzer',
-  password: ENV['DB_PASS'] || 'postgre_analyzer'
+  database: ENV['DB_NAME'] || 'postgresql_analyzer',
+  username: ENV['DB_USER'] || 'postgresql_analyzer',
+  password: ENV['DB_PASS'] || 'postgresql_analyzer'
 )
 
 class User < ActiveRecord::Base; end

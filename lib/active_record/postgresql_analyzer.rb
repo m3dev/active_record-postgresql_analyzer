@@ -1,10 +1,10 @@
 require "active_record"
 require "active_record/log_subscriber"
 
-require "active_record/postgre_analyzer/version"
+require "active_record/postgresql_analyzer/version"
 
 module ActiveRecord
-  module PostgreAnalyzer
+  module PostgreSQLAnalyzer
     class LogSubscriber < ActiveRecord::LogSubscriber
       IGNORED_PAYLOADS = %w(SCHEMA EXPLAIN CACHE)
       EXPLAINED_SQLS = /\A\s*(select|update|delete|insert)\b/i
@@ -39,5 +39,5 @@ module ActiveRecord
 end
 
 ActiveSupport.on_load(:active_record) do
-  ActiveRecord::PostgreAnalyzer::LogSubscriber.attach_to :active_record
+  ActiveRecord::PostgreSQLAnalyzer::LogSubscriber.attach_to :active_record
 end

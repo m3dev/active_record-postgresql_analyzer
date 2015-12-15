@@ -1,4 +1,4 @@
-RSpec.describe ActiveRecord::PostgreAnalyzer do
+RSpec.describe ActiveRecord::PostgreSQLAnalyzer do
   let(:stringio) { StringIO.new }
   let(:logger) { Logger.new(stringio) }
   before do

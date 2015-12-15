@@ -1,6 +1,6 @@
-# ActiveRecord::PostgreAnalyzer
+# ActiveRecord::PostgreSQLAnalyzer
 
-[![Gem Version](https://badge.fury.io/rb/active_record-postgre_analyzer.svg)](https://badge.fury.io/rb/active_record-postgre_analyzer)
+[![Gem Version](https://badge.fury.io/rb/active_record-postgresql_analyzer.svg)](https://badge.fury.io/rb/active_record-postgresql_analyzer)
 
 Analyze the execution plan and write log if sequential scan is detected.
 
@@ -9,7 +9,7 @@ Analyze the execution plan and write log if sequential scan is detected.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'active_record-postgre_analyzer', group: :development
+gem 'active_record-postgresql_analyzer', group: :development
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install active_record-postgre_analyzer
+    $ gem install active_record-postgresql_analyzer
 
 ## Usage
 
@@ -45,7 +45,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/m3dev/active_record-postgre_analyzer. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/m3dev/active_record-postgresql_analyzer. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License

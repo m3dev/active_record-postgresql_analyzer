@@ -1,6 +1,6 @@
 # ActiveRecord::PostgreAnalyzer
 
-Analyze the execution plan and write log when finding sequential scan.
+Analyze the execution plan and write log if sequential scan is detected.
 
 ## Installation
 
@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-Output to a logfile when finding sequential scan.
+Output to a logfile if sequential scan is detected.
 
 ```console
 ------------ find Seq Scan query ------------

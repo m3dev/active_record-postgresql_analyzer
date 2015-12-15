@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Takayuki Matsubara"]
   spec.email         = ["takayuki.1229@gmail.com"]
 
-  spec.summary       = %q{Analyze the execution plan and write log when finding sequential scan}
-  spec.description   = %q{Analyze the execution plan and write log when finding sequential scan}
+  spec.summary       = %q{Analyze the execution plan and write log if sequential scan is detected}
+  spec.description   = %q{Analyze the execution plan and write log if sequential scan is detected}
   spec.homepage      = "https://github.com/m3dev/active_record-postgre_analyzer"
   spec.license       = "MIT"
 

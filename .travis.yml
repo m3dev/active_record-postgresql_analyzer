@@ -6,3 +6,7 @@ before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
 env:
   - DB_NAME=travis_ci_test DB_USER=postgres
+gemfile:
+  - gemfiles/3.2.gemfile
+  - gemfiles/4.1.gemfile
+  - gemfiles/4.2.gemfile

@@ -1,6 +1,7 @@
 # ActiveRecord::PostgreSQLAnalyzer
 
 [![Gem Version](https://badge.fury.io/rb/active_record-postgresql_analyzer.svg)](https://badge.fury.io/rb/active_record-postgresql_analyzer)
+[![Build Status](https://travis-ci.org/m3dev/active_record-postgresql_analyzer.svg)](https://travis-ci.org/m3dev/active_record-postgresql_analyzer)
 
 Analyze the execution plan and write log if sequential scan is detected.
 

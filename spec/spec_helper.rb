@@ -5,8 +5,7 @@ ActiveRecord::Base.establish_connection(
   host: ENV['DB_HOST'] || 'localhost',
   port: ENV['DB_PORT'] || 5432,
   database: ENV['DB_NAME'] || 'postgresql_analyzer',
-  username: ENV['DB_USER'] || 'postgresql_analyzer',
-  password: ENV['DB_PASS'] || 'postgresql_analyzer'
+  username: ENV['DB_USER'] || 'postgresql_analyzer'
 )
 
 class User < ActiveRecord::Base; end

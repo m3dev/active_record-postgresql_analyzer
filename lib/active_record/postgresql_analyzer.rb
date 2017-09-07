@@ -15,11 +15,13 @@ module ActiveRecord
 
         return if ignore_payload?(payload)
 
+        connection = ObjectSpace._id2ref(payload[:connection_id])
+
         # disable SeqScan when index exists
         #   SEE ALSO: http://www.postgresql.org/docs/9.4/static/indexes-examine.html
-        ActiveRecord::Base.connection.execute("SET enable_seqscan TO off", "SCHEMA")
+        connection.execute("SET enable_seqscan TO off", "SCHEMA")
 
-        explain_result = ActiveRecord::Base.connection.explain(payload[:sql], payload[:binds])
+        explain_result = connection.explain(payload[:sql], payload[:binds])
         if seq_scan?(explain_result)
           debug '------------ find Seq Scan query ------------'
           debug payload[:sql]
